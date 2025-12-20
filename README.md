@@ -4,8 +4,9 @@
 
 ### Intro
 
-GNOME extension to set active, inactive windows' transparancy. Compatible with GNOME 45+
-The first opening of every window is fully opaque, it is the default behavior of the extension, **transparency is activated when focus changes between windows.** Also, fullscreen is always fully opaque. I do not feel that i am using Linux unless the windows r transparent.
+GNOME extension to set active, inactive windows' transparency. Compatible with GNOME 45+
+The first opening of every window is fully opaque, it is the default behavior of the extension, **transparency is activated when focus changes between windows.** Also, fullscreen is always fully opaque.
+I do not feel that i am using Linux unless the windows r transparent.
 
 ### Installation
 
@@ -41,3 +42,5 @@ nix-shell -p glib --run "glib-compile-schemas ~/.local/share/gnome-shell/extensi
 ### Preview
 
 ![Preview](preview1.png)
+
+![Preview](preview2.png)

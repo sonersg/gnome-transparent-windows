@@ -34,7 +34,6 @@ gnome-extensions enable gnome-transparent-windows@sonersg.com
 
 ```bash
 nix-shell -p glib --run "glib-compile-schemas ~/.local/share/gnome-shell/extensions/gnome-transparent-windows@sonersg.com/schemas"
-
 ```
 
 ⚠️ **You may have to log out and in!**

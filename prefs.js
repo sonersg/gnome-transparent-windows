@@ -48,6 +48,17 @@ export default class TransparentWindowsPreferences extends ExtensionPreferences 
         _('Inactive window opacity percentage:')
       )
     );
+    // Add info text
+    box.append(
+      new Gtk.Label({
+        label:
+          'The first opening of every window is fully opaque, it is the default behavior of the extension, **transparency is activated when focus changes between windows.** Also, fullscreen is always fully opaque.',
+        halign: Gtk.Align.START,
+        hexpand: true,
+        wrap: true,
+        xalign: 0,
+      })
+    );
 
     return box;
   }

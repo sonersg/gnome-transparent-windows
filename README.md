@@ -2,6 +2,10 @@
 
 # GNOME Transparent Windows
 
+![Preview](preview1.png)
+
+![Preview](preview2.png)
+
 ### Intro
 
 GNOME extension to set active, inactive windows' transparency. Compatible with GNOME 45+
@@ -30,16 +34,10 @@ gnome-extensions enable gnome-transparent-windows@sonersg.com
 
 ```
 
+⚠️ **You may have to log out and in!**
+
 #### To Compile Schema with NIX Package Manager
 
 ```bash
 nix-shell -p glib --run "glib-compile-schemas ~/.local/share/gnome-shell/extensions/gnome-transparent-windows@sonersg.com/schemas"
 ```
-
-⚠️ **You may have to log out and in!**
-
-### Preview
-
-![Preview](preview1.png)
-
-![Preview](preview2.png)

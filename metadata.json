@@ -5,5 +5,10 @@
   "shell-version": ["45", "46", "47", "48", "49"],
   "url": "https://github.com/sonersg/gnome-transparent-windows",
   "settings-schema": "org.gnome.shell.extensions.transparent-windows",
-  "version": 3
+  "donations": {
+    "kofi": "sonersg",
+    "github": "sonersg",
+    "buymeacoffee": "sonersg"
+  },
+  "version": 4
 }

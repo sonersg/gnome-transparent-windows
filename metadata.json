@@ -2,7 +2,7 @@
   "uuid": "gnome-transparent-windows@sonersg.com",
   "name": "Transparent Windows",
   "description": "Adjust the transparency of active and inactive windows seperately.",
-  "shell-version": ["45", "46", "47", "48", "49"],
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
   "url": "https://github.com/sonersg/gnome-transparent-windows",
   "settings-schema": "org.gnome.shell.extensions.transparent-windows",
   "donations": {
@@ -10,5 +10,5 @@
     "github": "sonersg",
     "buymeacoffee": "sonersg"
   },
-  "version": 4
+  "version": 5
 }

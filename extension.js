@@ -110,7 +110,9 @@ export default class TransparentWindowsExtension extends Extension {
       //   this._setWindowOpacity(window, Math.round((66 / 100) * 255));
       // } else
 
-      if (window === focusedWindow) {
+      if (window === focusedWindow && (window.is_maximized() || window.is_fullscreen())) {
+        this._setWindowOpacity(window, 255);
+      } else if (window === focusedWindow) {
         this._setWindowOpacity(window, activeOpacity);
       } else {
         this._setWindowOpacity(window, inactiveOpacity);
@@ -131,7 +133,7 @@ export default class TransparentWindowsExtension extends Extension {
     if (!actor) return;
 
     // Remove any existing transitions to avoid conflicts
-    actor.remove_all_transitions();
+    // actor.remove_all_transitions();
 
     // Animate to the new opacity with a smooth fade
     // actor.ease({

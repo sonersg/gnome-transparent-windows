@@ -1,3 +1,4 @@
+
 // import Clutter from 'gi://Clutter';
 import Meta from 'gi://Meta';
 import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
@@ -110,7 +111,7 @@ export default class TransparentWindowsExtension extends Extension {
       //   this._setWindowOpacity(window, Math.round((66 / 100) * 255));
       // } else
 
-      if (window === focusedWindow && (window.is_maximized() || window.is_fullscreen())) {
+      if (window === focusedWindow && (window.get_maximized() || window.is_fullscreen())) {
         this._setWindowOpacity(window, 255);
       } else if (window === focusedWindow) {
         this._setWindowOpacity(window, activeOpacity);
